@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+#include <conio.h>
+
+main()
+{
+	char nome;
+	int  pasw;
+	system("color E0");
+	setlocale(LC_ALL, "PORTUGUESE");
+	printf(" Digite o nome de usuario: ");
+	scanf("%s", &nome);
+	printf(" Digite a senha (APENAS NUMEROS): ");
+	scanf("%i", &pasw);
+	if ((nome=='L' || nome=='l') && pasw == 12345)
+		{
+		system("color 20");
+		printf("Acesso Permitido");
+		}
+	else
+		{
+		system("color 4F");
+		printf("Acesso Negado!");
+		}
+	system("pause > null");
+}
